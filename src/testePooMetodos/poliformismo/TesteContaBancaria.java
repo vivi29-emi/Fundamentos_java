@@ -2,18 +2,7 @@ package testePooMetodos.poliformismo;
 
 public class TesteContaBancaria {
 	
-	/**
-	 * @param args
-	 */
-	/**
-	 * @param args
-	 */
-	/**
-	 * @param args
-	 */
-	/**
-	 * @param args
-	 */
+
 	public static void main (String [] args) {
 		
 
@@ -78,7 +67,7 @@ public class TesteContaBancaria {
 		
 	}
 	
-	// método que verifica se o cliente possui saldo para realizar o saque
+	// Método que verifica se o cliente possui saldo para realizar o saque
 	private static void realizarSaque(ContaBancaria conta, double valor) {
 		
 		if (conta.sacar(valor)) {

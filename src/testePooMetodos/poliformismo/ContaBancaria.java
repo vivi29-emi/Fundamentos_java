@@ -49,7 +49,7 @@ public class ContaBancaria {
 	public void depositar(double valor) {
 		saldo += valor;
 	}
-	// metodo que analise se o saldo da conta for maio ou = zero será permitido fazer o saque.
+	// Método que analisa se o saldo da conta for maior ou = zero será permitido fazer o saque.
 	public boolean sacar (double valor) {
 		if ((saldo - valor) >= 0){
 			saldo -= valor;

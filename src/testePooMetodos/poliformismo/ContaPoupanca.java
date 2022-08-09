@@ -32,16 +32,16 @@ public class ContaPoupanca extends ContaBancaria{
 		return s ;
 	}
 	
-	// Metodo para calcular o rendimento
+	// Método para calcular o rendimento
 	
 	public boolean calcularNovoSaldo (double taxaRendimento) {
 		
-		// para pegar a data do dia no java
+		//  pega a data do dia
 		Calendar hoje = Calendar.getInstance();
 		
 		// regra na qual pega somente o dia
 		if (diaRendimento == hoje.get(Calendar.DAY_OF_MONTH)) {
-			// pegando os atributos da class mae para criar a lógica sendo mesmo que saldo += saldo * taxaRendimento
+			// pegando os atributos da class mãe para criar a lógica sendo mesmo que saldo += saldo * taxaRendimento
 		        this.setSaldo(this.getSaldo()+ (this.getSaldo()* taxaRendimento));
 		        return true;
 		}
