@@ -48,7 +48,7 @@ public class TesteContaBancaria {
 				realizarSaque(contaPoupanca,70);
 				
 				
-				
+				// lógica que pega a taxa de rendimendo e verifica se houve ou não de acordo com o dia.
 				if(contaPoupanca.calcularNovoSaldo(0.5)) {
 					
 					System.out.println("Rendimento aplicado, novo saldo :" + contaPoupanca.getSaldo());
@@ -77,6 +77,8 @@ public class TesteContaBancaria {
 
 		
 	}
+	
+	// método que verifica se o cliente possui saldo para realizar o saque
 	private static void realizarSaque(ContaBancaria conta, double valor) {
 		
 		if (conta.sacar(valor)) {

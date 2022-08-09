@@ -22,7 +22,8 @@ public class ContaEspecial extends ContaBancaria {
 		return s ;
 	}
 	
-	// metodo que verificar se tem limiteEspecial e retorna o valor do limite atualizado
+	/* método que verificar se tem limiteEspecial e retorna o valor do limite atualizado. 
+	 * Método subescrito da classe mãe sendo poliformismo com a mesma assinatura porem com os parametros e retorno diferentes*/
 	public boolean sacar (double valor) {
 		
 		double saldoComLimite = this.getSaldo()+ limite;

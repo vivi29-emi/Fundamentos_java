@@ -23,11 +23,11 @@ public class ContaPoupanca extends ContaBancaria{
 
 
 
-	@Override
+	@Override // <- Subescrevendo o método da class mãe
 	public String toString() {
 		String s = " Conta Poupança [";
 		s += " diaRendimento:" + diaRendimento;
-		s += ";" + super.toString();
+		s += ";" + super.toString(); // <- recebendo o toString da class mãe
 		s += "]";
 		return s ;
 	}

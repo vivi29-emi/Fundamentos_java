@@ -32,7 +32,8 @@ public class ContaBancaria {
 		this.saldo = saldo;
 	}
 	
-
+/* Método herdado da class objeto com objetivo de retornar uma representação da String do objeto, normamente 
+ * utilizado quando quero printar objeto no meu console por meio do PRINTLN ou PRINTF*/ 
 	@Override
 	public String toString() {
 		
